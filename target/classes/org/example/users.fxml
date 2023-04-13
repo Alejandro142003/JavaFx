@@ -9,7 +9,9 @@
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-image: url(https://i.pinimg.com/736x/d1/64/08/d1640814ffd53702480fc1b84575cc9a.jpg); -fx-background-repeat: no-repeat;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.Users">
     <children>
+        <Pane layoutX="17.0" layoutY="96.0" prefHeight="294.0" prefWidth="556.0" style="-fx-background-color: white;">
         <Pane layoutX="141.0" layoutY="105.0" prefHeight="285.0" prefWidth="432.0" style="-fx-background-color: white;">
+
             <children>
                 <Label layoutX="61.0" layoutY="14.0" text="First name" />
                 <Label layoutX="52.0" layoutY="88.0" text="Second name" />
@@ -18,11 +20,19 @@
             <TextField layoutX="14.0" layoutY="130.0" />
             <TextField layoutX="13.0" layoutY="208.0" />
             </children></Pane>
+
+        <Pane layoutX="17.0" layoutY="13.0" prefHeight="69.0" prefWidth="556.0" style="-fx-background-color: white;">
+            <children>
+                <Label layoutX="85.0" layoutY="26.0" text="Usuer" />
+                <Button fx:id="post" layoutX="482.0" layoutY="31.0" mnemonicParsing="false" onAction="#setLogout" text="Logout" />
+                <ImageView fitHeight="46.0" fitWidth="44.0" layoutX="19.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true" />
+            <Button fx:id="edit" layoutX="410.0" layoutY="30.0" mnemonicParsing="false" onAction="#setEdit" text="Edit" />
         <Pane layoutX="141.0" layoutY="13.0" prefHeight="82.0" prefWidth="432.0" style="-fx-background-color: white;">
             <children>
                 <Label layoutX="85.0" layoutY="35.0" text="Nombre" />
                 <Button fx:id="post" layoutX="353.0" layoutY="43.0" mnemonicParsing="false" text="Logout" />
                 <ImageView fitHeight="46.0" fitWidth="44.0" layoutX="19.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true" />
+
             </children>
         </Pane>
     </children>
