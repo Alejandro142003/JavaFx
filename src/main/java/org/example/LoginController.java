@@ -23,7 +23,7 @@ public class LoginController {
     private PasswordField passField;
 
     @FXML
-    private void btnHomeValidate() throws IOException {
+    private void btnHomeValidate() throws IOException { //Controlador de usuario y contraseña
         if (userField.getText().equals("admin") && passField.getText().equals("admin")){
             labelUser.setText("Correct user and password!");
             labelUser.setTextFill(Color.GREEN);
