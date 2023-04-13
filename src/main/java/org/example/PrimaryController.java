@@ -1,5 +1,6 @@
 package org.example;
 
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.collections.FXCollections;
@@ -13,6 +14,7 @@ import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.scene.paint.Color;
 
 public class PrimaryController  implements Initializable{
 
@@ -55,7 +57,7 @@ public class PrimaryController  implements Initializable{
 	}
 
 	@FXML
-	private void agregarPersona(ActionEvent event) {
+	private void agregarPersona(ActionEvent actionEvent) {
 		if(!"".equals(txtNombre.getText().trim())){
 			personas.add(new Persona(txtNombre.getText().trim(),txtApellidos.getText().trim(),txtEdad.getText().trim()));
 			tbPersonas.setItems(personas);
@@ -67,8 +69,20 @@ public class PrimaryController  implements Initializable{
 			Alert alerta=new Alert(Alert.AlertType.INFORMATION);
 			alerta.setHeaderText("Mensaje de informacion");
 			alerta.setTitle("Dialogo de advertencia");
-			alerta.setContentText("Es necesario que se escriba un nombre al contacto");
+			alerta.setContentText("Es necesario que escriba un nombre ");
 			alerta.showAndWait();
 		}
+		btnAgregar.setStyle("-fx-background-color: rgb(118,181,197);");
+		post.setStyle("-fx-background-color: rgb(118,181,197);");
 	}
+	@FXML
+	private Button post;
+
+	@FXML
+	private void setLogout()throws IOException{
+		App.setRoot("login");
+	}
+
+
+
 }
