@@ -36,11 +36,11 @@
             <Insets bottom="20.0" left="170.0" right="40.0" top="30.0" />
          </VBox.margin></Button>
       <TableView fx:id="tbPersonas" prefHeight="200.0" prefWidth="200.0">
-        <columns>
-          <TableColumn fx:id="colNombre" prefWidth="194.4000244140625" text="Nombre" />
-          <TableColumn fx:id="colApellidos" prefWidth="209.5999755859375" text="Apellidos" />
+         <columns>
+            <TableColumn fx:id="colNombre" prefWidth="194.4000244140625" text="Nombre" />
+            <TableColumn fx:id="colApellidos" prefWidth="209.5999755859375" text="Apellidos" />
             <TableColumn fx:id="colEdad" prefWidth="196.0" text="Edad" />
-        </columns>
+         </columns>
       </TableView>
    </children>
 </VBox>
