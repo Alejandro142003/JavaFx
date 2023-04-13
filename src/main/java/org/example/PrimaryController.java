@@ -1,4 +1,4 @@
-package com.example.demo200;
+package org.example;
 
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -16,59 +16,59 @@ import javafx.scene.control.cell.PropertyValueFactory;
 
 public class PrimaryController  implements Initializable{
 
-	   @FXML
-	    private Button btnAgregar;
+	@FXML
+	private Button btnAgregar;
 
-	    @FXML
-	    private TableColumn<Persona,String> colApellidos;
+	@FXML
+	private TableColumn<Persona,String> colApellidos;
 
-	    @FXML
-	    private TableColumn<Persona,String> colEdad;
+	@FXML
+	private TableColumn<Persona,String> colEdad;
 
-	    @FXML
-	    private TableColumn <Persona,String>colNombre;
+	@FXML
+	private TableColumn <Persona,String>colNombre;
 
-	    @FXML
-	    private TableView<Persona> tbPersonas;
+	@FXML
+	private TableView<Persona> tbPersonas;
 
-	    @FXML
-	    private TextField txtApellidos;
+	@FXML
+	private TextField txtApellidos;
 
-	    @FXML
-	    private TextField txtEdad;
+	@FXML
+	private TextField txtEdad;
 
-	    @FXML
-	    private TextField txtNombre;
-	    
-	    private ObservableList<Persona> personas=FXCollections.observableArrayList();
+	@FXML
+	private TextField txtNombre;
 
-/*arraylist de fx*/
-@Override
+	private ObservableList<Persona> personas=FXCollections.observableArrayList();
+
+	/*arraylist de fx*/
+	@Override
 	public void initialize(URL url,ResourceBundle rb) {
 
-	    	colNombre.setCellValueFactory(new PropertyValueFactory<>("nombre"));
+		colNombre.setCellValueFactory(new PropertyValueFactory<>("nombre"));
 
-			colApellidos.setCellValueFactory(new PropertyValueFactory<>("apellidos"));
+		colApellidos.setCellValueFactory(new PropertyValueFactory<>("apellidos"));
 
-			colEdad.setCellValueFactory(new PropertyValueFactory<>("edad"));
+		colEdad.setCellValueFactory(new PropertyValueFactory<>("edad"));
 
-	    }
+	}
 
-	    @FXML
-	    private void agregarPersona(ActionEvent event) {
-			if(!"".equals(txtNombre.getText().trim())){
-				personas.add(new Persona(txtNombre.getText().trim(),txtApellidos.getText().trim(),txtEdad.getText().trim()));
-				tbPersonas.setItems(personas);
-				tbPersonas.refresh();
-				txtNombre.setText("");
-				txtApellidos.setText("");
-				txtEdad.setText("");
-			}else{
-				Alert alerta=new Alert(Alert.AlertType.INFORMATION);
-				alerta.setHeaderText("Mensaje de informacion");
-				alerta.setTitle("Dialogo de advertencia");
-				alerta.setContentText("Es necesario que se escriba un nombre al contacto");
-				alerta.showAndWait();
-			}
+	@FXML
+	private void agregarPersona(ActionEvent event) {
+		if(!"".equals(txtNombre.getText().trim())){
+			personas.add(new Persona(txtNombre.getText().trim(),txtApellidos.getText().trim(),txtEdad.getText().trim()));
+			tbPersonas.setItems(personas);
+			tbPersonas.refresh();
+			txtNombre.setText("");
+			txtApellidos.setText("");
+			txtEdad.setText("");
+		}else{
+			Alert alerta=new Alert(Alert.AlertType.INFORMATION);
+			alerta.setHeaderText("Mensaje de informacion");
+			alerta.setTitle("Dialogo de advertencia");
+			alerta.setContentText("Es necesario que se escriba un nombre al contacto");
+			alerta.showAndWait();
 		}
+	}
 }

@@ -1,4 +1,4 @@
-package com.example.demo200;
+package org.example;
 import javafx.fxml.FXML;
 
 import java.util.Objects;
@@ -32,10 +32,7 @@ public class Persona {
     public void setEdad(String edad) {
         this.edad = edad;
     }
-    @Override
-    public int hashCode() {
-        return Objects.hash(apellidos, edad, nombre);
-    }
+
     @Override
     public boolean equals(Object obj) {
         if (this == obj)
