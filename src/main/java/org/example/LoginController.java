@@ -5,6 +5,7 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import javafx.scene.paint.Color;
 
 public class LoginController {
 
@@ -20,11 +21,11 @@ public class LoginController {
     @FXML
     private void btnHomeValidate() throws IOException {
         if (userField.getText().equals("admin")){
-            labelUser.setText("Usuario correcto!");
-            labelUser.setStyle("fx-background-color: #129c00");
+            labelUser.setText("Correct user!");
+            labelUser.setTextFill(Color.GREEN);
         }else {
-            labelUser.setText("Usuario incorrecto!");
-            labelUser.setStyle("fx-background-color: #FF0000");
+            labelUser.setText("Wrong User!");
+            labelUser.setTextFill(Color.RED);
         }
     }
 }
