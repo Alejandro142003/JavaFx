@@ -13,7 +13,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="364.0" prefWidth="630.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.LoginController">
+<AnchorPane prefHeight="364.0" prefWidth="630.0" style="-fx-background-image: url("..\imagenes\Login_Background.jpg");" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.LoginController">
    <children>
       <GridPane alignment="CENTER" prefHeight="431.0" prefWidth="630.0">
         <columnConstraints>
