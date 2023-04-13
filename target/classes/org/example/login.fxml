@@ -52,7 +52,7 @@
                   <Pane prefHeight="50.0" prefWidth="50.0" style="-fx-background-image: url(https://cdn-icons-png.flaticon.com/512/61/61457.png); -fx-background-position: center center; -fx-background-size: 38 38; -fx-background-repeat: no-repeat;" />
                </children>
             </Pane>
-            <Button fx:id="btn_home" alignment="CENTER" contentDisplay="CENTER" layoutX="179.0" layoutY="221.0" mnemonicParsing="false" onAction="#btnHomeValidate" onKeyPressed="#btnHomeValidate" prefHeight="42.0" prefWidth="107.0" style="-fx-background-color: #AC69D3; -fx-background-radius: 15;" text="Login" textFill="WHITE">
+            <Button fx:id="btn_home" alignment="CENTER" contentDisplay="CENTER" layoutX="179.0" layoutY="221.0" mnemonicParsing="false" onAction="#btnHomeValidate" prefHeight="42.0" prefWidth="107.0" style="-fx-background-color: #AC69D3; -fx-background-radius: 15;" text="Login" textFill="WHITE">
                <font>
                   <Font name="Microsoft Sans Serif" size="16.0" />
                </font>
