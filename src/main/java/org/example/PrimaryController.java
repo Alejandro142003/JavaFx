@@ -1,4 +1,4 @@
-package com.example.demo200;
+package org.example;
 
 import java.net.URL;
 import java.util.ResourceBundle;
