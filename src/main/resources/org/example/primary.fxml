@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre" wrappingWidth="90.24566650390625" />
+      <TextField fx:id="txtNombre" />
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Apellidos" wrappingWidth="78.93670654296875" />
+      <TextField fx:id="txtApellidos" />
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Edad" wrappingWidth="121.33673095703125" />
+      <TextField fx:id="txtEdad" />
+      <Button fx:id="btnAgregar" mnemonicParsing="false"  prefHeight="26.0" prefWidth="180.0" text="Agregar Persona">
+         <VBox.margin>
+            <Insets bottom="20.0" left="170.0" right="40.0" top="30.0" />
+         </VBox.margin></Button>
+      <TableView fx:id="tbPersonas" prefHeight="200.0" prefWidth="200.0">
+        <columns>
+          <TableColumn fx:id="colNombre" prefWidth="194.4000244140625" text="Nombre" />
+          <TableColumn fx:id="colApellidos" prefWidth="209.5999755859375" text="Apellidos" />
+            <TableColumn fx:id="colEdad" prefWidth="196.0" text="Edad" />
+        </columns>
+      </TableView>
+   </children>
+</VBox>
