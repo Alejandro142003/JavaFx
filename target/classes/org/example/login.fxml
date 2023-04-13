@@ -32,12 +32,12 @@
                   <VBox prefHeight="190.0" prefWidth="334.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
                      <children>
                         <Pane prefHeight="48.0" prefWidth="337.0" />
-                        <TextField fx:id="userField" prefHeight="50.0" prefWidth="340.0" text="User">
+                        <TextField fx:id="userField" prefHeight="50.0" prefWidth="340.0" text="Username">
                            <font>
                               <Font name="Microsoft Sans Serif" size="18.0" />
                            </font></TextField>
                         <Pane prefHeight="19.0" prefWidth="340.0" />
-                        <PasswordField prefHeight="50.0" prefWidth="340.0" />
+                        <PasswordField fx:id="passField" prefHeight="50.0" prefWidth="340.0" />
                      </children>
                   </VBox>
                </children>
@@ -52,13 +52,13 @@
                   <Pane prefHeight="50.0" prefWidth="50.0" style="-fx-background-image: url(https://cdn-icons-png.flaticon.com/512/61/61457.png); -fx-background-position: center center; -fx-background-size: 38 38; -fx-background-repeat: no-repeat;" />
                </children>
             </Pane>
-            <Button fx:id="btn_home" alignment="CENTER" contentDisplay="CENTER" layoutX="179.0" layoutY="221.0" mnemonicParsing="false" onAction="#btnHomeValidate" prefHeight="42.0" prefWidth="107.0" style="-fx-background-color: #AC69D3; -fx-background-radius: 15;" text="Login" textFill="WHITE">
+            <Button fx:id="btn_home" alignment="CENTER" contentDisplay="CENTER" layoutX="179.0" layoutY="221.0" mnemonicParsing="false" onAction="#btnHomeValidate" onKeyPressed="#btnHomeValidate" prefHeight="42.0" prefWidth="107.0" style="-fx-background-color: #AC69D3; -fx-background-radius: 15;" text="Login" textFill="WHITE">
                <font>
                   <Font name="Microsoft Sans Serif" size="16.0" />
                </font>
             </Button>
          </children></Pane>
-      <Label fx:id="labelUser" alignment="CENTER" layoutX="1.0" layoutY="337.0" prefHeight="18.0" prefWidth="630.0" textAlignment="CENTER" />
+      <Label fx:id="labelUser" alignment="CENTER" layoutX="1.0" layoutY="345.0" prefHeight="18.0" prefWidth="630.0" textAlignment="CENTER" />
       <Pane layoutX="249.0" layoutY="50.0" prefHeight="136.0" prefWidth="134.0" style="-fx-background-color: #AC69D3; -fx-background-radius: 500;">
          <children>
             <Pane layoutY="-5.0" prefHeight="146.0" prefWidth="134.0" style="-fx-background-image: url(https://cdn-icons-png.flaticon.com/512/456/456212.png); -fx-background-position: center center; -fx-background-size: 90 90; -fx-background-repeat: no-repeat;" />
