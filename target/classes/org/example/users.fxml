@@ -11,12 +11,12 @@
     <children>
         <Pane layoutX="17.0" layoutY="96.0" prefHeight="294.0" prefWidth="556.0" style="-fx-background-color: white;">
             <children>
-                <Label layoutX="61.0" layoutY="14.0" text="First name" />
-                <Label layoutX="52.0" layoutY="88.0" text="Second name" />
-                <Label layoutX="63.0" layoutY="172.0" text="Years old" />
-            <TextField layoutX="14.0" layoutY="46.0" />
-            <TextField layoutX="14.0" layoutY="130.0" />
-            <TextField layoutX="13.0" layoutY="208.0" />
+                <Label layoutX="256.0" layoutY="14.0" text="First name" />
+                <Label layoutX="247.0" layoutY="83.0" text="Second name" />
+                <Label layoutX="258.0" layoutY="173.0" text="Years old" />
+            <TextField layoutX="209.0" layoutY="38.0" />
+            <TextField layoutX="208.0" layoutY="122.0" />
+            <TextField layoutX="208.0" layoutY="209.0" />
             </children></Pane>
         <Pane layoutX="17.0" layoutY="13.0" prefHeight="69.0" prefWidth="556.0" style="-fx-background-color: white;">
             <children>
