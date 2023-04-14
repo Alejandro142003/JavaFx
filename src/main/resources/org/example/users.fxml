@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-image: url(https://i.pinimg.com/736x/d1/64/08/d1640814ffd53702480fc1b84575cc9a.jpg); -fx-background-repeat: no-repeat;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.Users">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-image: url(https://i.pinimg.com/736x/d1/64/08/d1640814ffd53702480fc1b84575cc9a.jpg); -fx-background-repeat: no-repeat; -fx-background-size: 650 500; -fx-background-position: center center;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.Users">
     <children>
         <Pane layoutX="17.0" layoutY="96.0" prefHeight="294.0" prefWidth="566.0" style="-fx-background-color: white;">
             <children>
